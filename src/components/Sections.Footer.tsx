@@ -14,24 +14,24 @@ import {
 import type { ModalCustomProps } from "../types/utils";
 import type { Labels } from '../types';
 
-const PreviewDateTypoStyled = styled(Typography)(({ theme }) => ({
-  position: "relative",
-  top: "1px",
-  minWidth: "130px",
-  fontSize: 14,
-  lineHeight: "14px",
-  //color: theme.palette.grey[800],
-}));
+// const PreviewDateTypoStyled = styled(Typography)(({ theme }) => ({
+//   position: "relative",
+//   top: "1px",
+//   minWidth: "130px",
+//   fontSize: 14,
+//   lineHeight: "14px",
+//   //color: theme.palette.grey[800],
+// }));
 
-const PreviewDateMessageTypoStyled = styled(Typography)(({ theme }) => ({
-  position: "relative",
-  top: "1px",
-  minWidth: "130px",
-  fontSize: 14,
-  lineHeight: "14px",
-  //theme: theme,
-  //color: theme.palette.grey[500],
-}));
+// const PreviewDateMessageTypoStyled = styled(Typography)(({ theme }) => ({
+//   position: "relative",
+//   top: "1px",
+//   minWidth: "130px",
+//   fontSize: 14,
+//   lineHeight: "14px",
+//   //theme: theme,
+//   //color: theme.palette.grey[500],
+// }));
 
 type FooterProps = {
   //theme: any;
@@ -75,23 +75,23 @@ export const Footer = ({
         alignItems={"center"}
       >
         {startDate ? (
-          <PreviewDateTypoStyled
+          <Typography
             textAlign={{
               xs: "center",
               md: "left",
             }}
           >
             {previewDate(startDate)}
-          </PreviewDateTypoStyled>
+          </Typography>
         ) : (
-          <PreviewDateMessageTypoStyled
+          <Typography
             textAlign={{
               xs: "center",
               md: "left",
             }}
           >
             {labels?.footer?.startDate || 'Start Date'}
-          </PreviewDateMessageTypoStyled>
+          </Typography>
         )}
 
         <IconXs
@@ -117,23 +117,23 @@ export const Footer = ({
         />
 
         {endDate ? (
-          <PreviewDateTypoStyled
+          <Typography
             textAlign={{
               xs: "center",
               md: "left",
             }}
           >
             {previewDate(endDate)}
-          </PreviewDateTypoStyled>
+          </Typography>
         ) : (
-          <PreviewDateMessageTypoStyled
+          <Typography
             textAlign={{
               xs: "center",
               md: "left",
             }}
           >
             {labels?.footer?.endDate || 'End Date'}
-          </PreviewDateMessageTypoStyled>
+          </Typography>
         )}
       </Grid2>
 

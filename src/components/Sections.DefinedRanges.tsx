@@ -13,7 +13,7 @@ import {
 import type { DateRange, DefinedRange } from "../types/utils";
 
 type DefinedRangesProps = {
-  theme: any;
+  //theme: any;
   setRange: (range: DateRange) => void;
   selectedRange: DateRange;
   ranges: DefinedRange[];
@@ -59,7 +59,7 @@ export const DefinedRanges: React.FunctionComponent<DefinedRangesProps> = ({
               sx={[
                 isSameRange(range, selectedRange)
                   ? {
-                      backgroundColor: alpha(theme.palette.grey[600], 0.1),
+                      backgroundColor: alpha("#d4d4d4", 0.1),
                     }
                   : {},
               ]}
@@ -79,22 +79,22 @@ export const DefinedRanges: React.FunctionComponent<DefinedRangesProps> = ({
                 }}
               >
                 <ListItemText
-                  // primaryTypographyProps={{
-                  //   sx: [
-                  //     isSameRange(range, selectedRange)
-                  //       ? {
-                  //           color: alpha(theme.palette.grey[800], 1),
-                  //         }
-                  //       : {
-                  //           color: alpha(theme.palette.grey[600], 1),
-                  //         },
-                  //     {
-                  //       fontFamily: "Roboto",
-                  //       fontSize: 13,
-                  //       fontWeight: 400,
-                  //     },
-                  //   ],
-                  // }}
+                   primaryTypographyProps={{
+                     sx: [
+                       isSameRange(range, selectedRange)
+                         ? {
+                             color: alpha("#d4d4d4", 1),
+                           }
+                         : {
+                             color: alpha("#d4d4d4", 1),
+                           },
+                       {
+                         fontFamily: "Roboto",
+                         fontSize: 13,
+                         fontWeight: 400,
+                       },
+                     ],
+                   }}
                 >
                   {range.label}
                 </ListItemText>

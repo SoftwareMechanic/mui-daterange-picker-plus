@@ -146,7 +146,7 @@ export const Sections = (props: SectionsProps) => {
       container
       sx={{
         borderRadius: "16px",
-        backgroundColor: "#fff",
+        backgroundColor: "background.paper",
         overflow: "hidden",
       }}
     >

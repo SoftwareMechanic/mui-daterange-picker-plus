@@ -1,28 +1,28 @@
 import { styled, Button, Grid2 } from "@mui/material";
 import type { ModalCustomProps } from "../types/utils";
 
-const CancelButtonStyled = styled(Button)(({ theme }) => ({
-  textTransform: "none",
-  fontSize: 13,
-  fontWeight: 400,
-  borderRadius: "8px",
-  marginRight: "8px",
-  padding: "0 16px",
-  height: "36px",
-  // color: theme.palette.grey[600],
-  // "&:hover": {
-  //   backgroundColor: theme.palette.grey[100],
-  // },
-}));
+// const CancelButtonStyled = styled(Button)(({ theme }) => ({
+//   textTransform: "none",
+//   fontSize: 13,
+//   fontWeight: 400,
+//   borderRadius: "8px",
+//   marginRight: "8px",
+//   padding: "0 16px",
+//   height: "36px",
+//   // color: theme.palette.grey[600],
+//   // "&:hover": {
+//   //   backgroundColor: theme.palette.grey[100],
+//   // },
+// }));
 
-const ApplyButtonStyled = styled(Button)({
-  fontSize: 13,
-  fontWeight: 400,
-  borderRadius: "8px",
-  textTransform: "none",
-  height: "36px",
-  padding: "0 16px",
-});
+// const ApplyButtonStyled = styled(Button)({
+//   fontSize: 13,
+//   fontWeight: 400,
+//   borderRadius: "8px",
+//   textTransform: "none",
+//   height: "36px",
+//   padding: "0 16px",
+// });
 
 type ActionsProps = Omit<ModalCustomProps, "onSubmit"> & {
   labels?: {
@@ -40,18 +40,18 @@ export const Actions = ({
   return (
     <>
       <Grid2>
-        <CancelButtonStyled
+        <Button
           disableRipple
           disableElevation
           variant="text"
           onClick={onCloseCallback}
         >
           {labels?.cancel || "Cancel"}
-        </CancelButtonStyled>
+        </Button>
       </Grid2>
 
       <Grid2>
-        <ApplyButtonStyled
+        <Button
           disableRipple
           disableElevation
           type="submit"
@@ -60,7 +60,7 @@ export const Actions = ({
           onClick={onSubmit}
         >
           {labels?.apply || "Apply"}
-        </ApplyButtonStyled>
+        </Button>
       </Grid2>
     </>
   );

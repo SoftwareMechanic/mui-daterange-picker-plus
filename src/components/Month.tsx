@@ -84,7 +84,7 @@ export const Month: React.FunctionComponent<MonthProps> = (
         alignItems="center"
         sx={{
           height: "55px",
-          //backgroundColor: alpha(theme.palette.grey[400], 0.1),
+          backgroundColor: "background.paper",
         }}
       >
         <MonthHeader

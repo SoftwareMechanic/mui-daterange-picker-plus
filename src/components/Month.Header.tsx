@@ -255,7 +255,7 @@ export const MonthHeader = ({
               root: {
                 sx: {
                   height: "30px",
-                  backgroundColor: "#fff",
+                  backgroundColor: "background.paper",
                 },
               },
             }}
@@ -331,9 +331,9 @@ export const MonthHeader = ({
         >
           <KeyboardArrowRight
             fontSize="small"
-            // sx={{
-            //   fill: nextDisabled ? `${theme.palette.grey[400]}` : "secondary",
-            // }}
+            sx={{
+              fill: nextDisabled ? `primary` : "secondary",
+            }}
           />
         </IconButton>
       </Grid2>
