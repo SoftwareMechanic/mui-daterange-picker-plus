@@ -3,7 +3,6 @@ import type { Locale } from "date-fns";
 import {
   Divider,
   styled,
-  useTheme,
   Typography,
   Grid2,
 } from "@mui/material";
@@ -21,7 +20,7 @@ const PreviewDateTypoStyled = styled(Typography)(({ theme }) => ({
   minWidth: "130px",
   fontSize: 14,
   lineHeight: "14px",
-  color: theme.palette.grey[800],
+  //color: theme.palette.grey[800],
 }));
 
 const PreviewDateMessageTypoStyled = styled(Typography)(({ theme }) => ({
@@ -30,10 +29,12 @@ const PreviewDateMessageTypoStyled = styled(Typography)(({ theme }) => ({
   minWidth: "130px",
   fontSize: 14,
   lineHeight: "14px",
-  color: theme.palette.grey[500],
+  //theme: theme,
+  //color: theme.palette.grey[500],
 }));
 
 type FooterProps = {
+  //theme: any;
   startDate?: Date;
   endDate?: Date;
   locale?: Locale;
@@ -47,11 +48,12 @@ export const Footer = ({
   endDate,
   locale,
   labels,
+  //theme,
   onCloseCallback,
   onSubmit,
   RangeSeparatorIcons,
+  
 }: FooterProps) => {
-  const theme = useTheme();
   const previewDate = (date: Date) => {
     return format(date, "dd MMMM yyyy", { locale });
   };
@@ -95,7 +97,7 @@ export const Footer = ({
         <IconXs
           fontSize="small"
           sx={{
-            fill: theme.palette.grey[400],
+            //fill: theme.palette.grey[400],
             display: {
               xs: "block",
               md: "none",
@@ -106,7 +108,7 @@ export const Footer = ({
         <IconMd
           fontSize="small"
           sx={{
-            fill: theme.palette.grey[400],
+            //fill: theme.palette.grey[400],
             display: {
               xs: "none",
               md: "block",

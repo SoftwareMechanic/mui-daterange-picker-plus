@@ -7,12 +7,13 @@ import {
   ListItemButton,
   ListItemText,
   alpha,
-  useTheme,
+  //useTheme,
   Grid2,
 } from "@mui/material";
 import type { DateRange, DefinedRange } from "../types/utils";
 
 type DefinedRangesProps = {
+  theme: any;
   setRange: (range: DateRange) => void;
   selectedRange: DateRange;
   ranges: DefinedRange[];
@@ -39,9 +40,9 @@ export const DefinedRanges: React.FunctionComponent<DefinedRangesProps> = ({
       <Grid2 xs="auto">
         <Box
           height="54px"
-          sx={{
-            backgroundColor: alpha(theme.palette.grey[400], 0.1),
-          }}
+          // sx={{
+          //   backgroundColor: alpha(theme.palette.grey[400], 0.1),
+          // }}
         ></Box>
       </Grid2>
       <Grid2 xs>

@@ -5,7 +5,6 @@ import {
   Select,
   Typography,
   alpha,
-  useTheme,
   Grid2,
 } from "@mui/material";
 import type { SelectChangeEvent, SvgIconProps } from "@mui/material";
@@ -43,6 +42,7 @@ type SectionsProps = {
     handleHoverDateNumber: (day: Date) => void;
     handleClickNavIcon: (marker: symbol, action: NavigationAction) => void;
   };
+  //theme: any;
   locale?: Locale;
   labels?: Labels;
 
@@ -58,7 +58,6 @@ type SectionsProps = {
 };
 
 export const Sections = (props: SectionsProps) => {
-  const theme = useTheme();
   const {
     dateRange,
     ranges,
@@ -72,6 +71,7 @@ export const Sections = (props: SectionsProps) => {
     handleClickDefinedRange,
     helpers,
     handlers,
+    //theme,
     locale,
     labels,
 
@@ -181,7 +181,7 @@ export const Sections = (props: SectionsProps) => {
           height="48px"
           alignItems={"center"}
           px="16px"
-          sx={{ backgroundColor: alpha(theme.palette.grey[400], 0.1) }}
+          //sx={{ backgroundColor: alpha(theme.palette.grey[400], 0.1) }}
         >
           <Grid2
             xs={12}
@@ -210,9 +210,9 @@ export const Sections = (props: SectionsProps) => {
                 IconComponent={(props) => (
                   <KeyboardArrowDown
                     fontSize="small"
-                    sx={{
-                      fill: theme.palette.grey[400],
-                    }}
+                    // sx={{
+                    //   fill: theme.palette.grey[400],
+                    // }}
                     {...props}
                   />
                 )}

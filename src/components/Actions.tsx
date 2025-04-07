@@ -9,10 +9,10 @@ const CancelButtonStyled = styled(Button)(({ theme }) => ({
   marginRight: "8px",
   padding: "0 16px",
   height: "36px",
-  color: theme.palette.grey[600],
-  "&:hover": {
-    backgroundColor: theme.palette.grey[100],
-  },
+  // color: theme.palette.grey[600],
+  // "&:hover": {
+  //   backgroundColor: theme.palette.grey[100],
+  // },
 }));
 
 const ApplyButtonStyled = styled(Button)({

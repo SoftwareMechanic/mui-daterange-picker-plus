@@ -5,7 +5,7 @@ import {
   IconButton,
   MenuItem,
   Select,
-  useTheme,
+  //useTheme,
   Typography,
   Grid2,
 } from "@mui/material";
@@ -50,7 +50,7 @@ export const MonthHeader = ({
   onClickPrevious,
   locale,
 }: MonthHeaderProps) => {
-  const theme = useTheme();
+  //const theme = useTheme();
 
   const availableYearRange = {
     start: ((minDate as Date) || AVAILABLE_MIN_DATE).getFullYear(),
@@ -138,31 +138,31 @@ export const MonthHeader = ({
           onClick={onClickPrevious}
           sx={{
             borderRadius: "8px",
-            color: theme.palette.grey[600],
-            ".MuiSvgIcon-root": {
-              color: theme.palette.grey[600],
-            },
-            "&:hover": {
-              backgroundColor: theme.palette.grey[100],
-            },
+            // color: theme.palette.grey[600],
+            // ".MuiSvgIcon-root": {
+            //   color: theme.palette.grey[600],
+            // },
+            // "&:hover": {
+            //   backgroundColor: theme.palette.grey[100],
+            // },
 
             "&.Mui-disabled": {
               backgroundColor: "transparent",
             },
 
-            "&.Mui-upon-secondary-bg": {
-              // backgroundColor: grey[200],
-              "&:hover": {
-                backgroundColor: theme.palette.grey[200],
-              },
-            },
+            // "&.Mui-upon-secondary-bg": {
+            //   // backgroundColor: grey[200],
+            //   "&:hover": {
+            //     backgroundColor: theme.palette.grey[200],
+            //   },
+            // },
           }}
         >
           <KeyboardArrowLeft
             fontSize="small"
-            sx={{
-              fill: prevDisabled ? `${theme.palette.grey[400]}` : "secondary",
-            }}
+            // sx={{
+            //   fill: prevDisabled ? `${theme.palette.grey[400]}` : "secondary",
+            // }}
           />
         </IconButton>
       </Grid2>
@@ -181,9 +181,9 @@ export const MonthHeader = ({
             IconComponent={(props) => (
               <KeyboardArrowDown
                 fontSize="small"
-                sx={{
-                  fill: theme.palette.grey[400],
-                }}
+                // sx={{
+                //   fill: theme.palette.grey[400],
+                // }}
                 {...props}
               />
             )}
@@ -245,9 +245,9 @@ export const MonthHeader = ({
             IconComponent={(props) => (
               <KeyboardArrowDown
                 fontSize="small"
-                sx={{
-                  fill: theme.palette.grey[400],
-                }}
+                // sx={{
+                //   fill: theme.palette.grey[400],
+                // }}
                 {...props}
               />
             )}
@@ -310,30 +310,30 @@ export const MonthHeader = ({
           onClick={onClickNext}
           sx={{
             borderRadius: "8px",
-            color: theme.palette.grey[600],
-            ".MuiSvgIcon-root": {
-              color: theme.palette.grey[600],
-            },
-            "&:hover": {
-              backgroundColor: theme.palette.grey[100],
-            },
+            // color: theme.palette.grey[600],
+            // ".MuiSvgIcon-root": {
+            //   color: theme.palette.grey[600],
+            // },
+            // "&:hover": {
+            //   backgroundColor: theme.palette.grey[100],
+            // },
 
             "&.Mui-disabled": {
               backgroundColor: "transparent",
             },
 
-            "&.Mui-upon-secondary-bg": {
-              "&:hover": {
-                backgroundColor: theme.palette.grey[200],
-              },
-            },
+            // "&.Mui-upon-secondary-bg": {
+            //   "&:hover": {
+            //     backgroundColor: theme.palette.grey[200],
+            //   },
+            // },
           }}
         >
           <KeyboardArrowRight
             fontSize="small"
-            sx={{
-              fill: nextDisabled ? `${theme.palette.grey[400]}` : "secondary",
-            }}
+            // sx={{
+            //   fill: nextDisabled ? `${theme.palette.grey[400]}` : "secondary",
+            // }}
           />
         </IconButton>
       </Grid2>

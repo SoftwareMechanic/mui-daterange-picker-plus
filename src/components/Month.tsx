@@ -9,7 +9,7 @@ import {
 import type { Locale, Day as DayjsDay } from "date-fns";
 import {
   Typography,
-  useTheme,
+  //useTheme,
   alpha,
   Grid2,
 } from "@mui/material";
@@ -51,7 +51,7 @@ type MonthProps = {
 export const Month: React.FunctionComponent<MonthProps> = (
   props: MonthProps
 ) => {
-  const theme = useTheme();
+  //const theme = useTheme();
   const {
     helpers,
     handlers,
@@ -84,7 +84,7 @@ export const Month: React.FunctionComponent<MonthProps> = (
         alignItems="center"
         sx={{
           height: "55px",
-          backgroundColor: alpha(theme.palette.grey[400], 0.1),
+          //backgroundColor: alpha(theme.palette.grey[400], 0.1),
         }}
       >
         <MonthHeader
