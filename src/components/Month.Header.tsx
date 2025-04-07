@@ -7,7 +7,7 @@ import {
   Select,
   useTheme,
   Typography,
-  Unstable_Grid2 as Grid2,
+  Grid2,
 } from "@mui/material";
 import type { SelectChangeEvent } from "@mui/material";
 import {
