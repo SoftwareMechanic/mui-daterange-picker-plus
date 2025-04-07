@@ -33,7 +33,7 @@ export const DefinedRanges: React.FunctionComponent<DefinedRangesProps> = ({
   setRange,
   selectedRange,
 }: DefinedRangesProps) => {
-  const theme = useTheme();
+  //const theme = useTheme();
 
   return (
     <>
@@ -79,22 +79,22 @@ export const DefinedRanges: React.FunctionComponent<DefinedRangesProps> = ({
                 }}
               >
                 <ListItemText
-                  primaryTypographyProps={{
-                    sx: [
-                      isSameRange(range, selectedRange)
-                        ? {
-                            color: alpha(theme.palette.grey[800], 1),
-                          }
-                        : {
-                            color: alpha(theme.palette.grey[600], 1),
-                          },
-                      {
-                        fontFamily: "Roboto",
-                        fontSize: 13,
-                        fontWeight: 400,
-                      },
-                    ],
-                  }}
+                  // primaryTypographyProps={{
+                  //   sx: [
+                  //     isSameRange(range, selectedRange)
+                  //       ? {
+                  //           color: alpha(theme.palette.grey[800], 1),
+                  //         }
+                  //       : {
+                  //           color: alpha(theme.palette.grey[600], 1),
+                  //         },
+                  //     {
+                  //       fontFamily: "Roboto",
+                  //       fontSize: 13,
+                  //       fontWeight: 400,
+                  //     },
+                  //   ],
+                  // }}
                 >
                   {range.label}
                 </ListItemText>
