@@ -15,7 +15,7 @@ export const PickerModal = ({
   // const theme = useTheme();
   // const isMobileView = useMediaQuery(theme.breakpoints.down("md"));
 
-  if (isMobileView) {
+  if (true) { //isMobileView
     const { open, onClose } = modalProps;
     return (
       <Dialog open={open} onClose={onClose}>
