@@ -55,7 +55,7 @@ export const Day: React.FunctionComponent<DayProps> = ({
         color="primary"
         sx={{
            ":hover": {
-             backgroundColor: alpha(theme.palette.primary, 0.2),
+             backgroundColor: alpha("background.paper", 0.2),
            },
           borderRadius: "8px",
           height: "36px",
@@ -82,11 +82,11 @@ export const Day: React.FunctionComponent<DayProps> = ({
           sx={{
             fontSize: "14px",
             visibility: hidden && hideOutsideMonthDays ? "hidden" : "visible",
-             color: !disabled
-               ? filled
-                 ? theme.palette.primary.contrastText
-                 : theme.palette.text.primary
-               : theme.palette.text.secondary,
+            //  color: !disabled
+            //    ? filled
+            //      ? theme.palette.primary.contrastText
+            //      : theme.palette.text.primary
+            //    : theme.palette.text.secondary,
           }}
         >
           {value}
