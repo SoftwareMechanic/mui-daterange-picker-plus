@@ -18,7 +18,7 @@
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
     "ci": "pnpm run lint && pnpm run build",
-    "release": "pnpm run lint && pnpm run build && changeset publish"
+    "release": "pnpm run lint && pnpm run build && changeset publish",
     "prepare": "npm run build"
   },
   "author": "Miyushan Rodrigo <miyushanrodrigo@gmail.com>",
